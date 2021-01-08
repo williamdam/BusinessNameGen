@@ -7,11 +7,13 @@ import 'package:english_words/english_words.dart';
 
 void main() => runApp(MyApp());
 
+// Main application
 class MyApp extends StatelessWidget {
   
   @override
   
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       title: 'Startup Name Generator',
       home: RandomWords(),
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
       ),
     );
+
   }
   
 }
@@ -28,6 +31,7 @@ class RandomWords extends StatefulWidget {
   _RandomWordsState createState() => _RandomWordsState();
 }
 
+// Stores state of RandomWords class
 class _RandomWordsState extends State<RandomWords> {
   
   final _suggestions = <WordPair>[];
